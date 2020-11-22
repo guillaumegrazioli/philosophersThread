@@ -19,4 +19,16 @@ public class ChopStick {
     public String toString() {
         return "Stick#" + myNumber;
     }
+
+    void take() {
+        if (this.iAmFree == true){
+           this.iAmFree = false; 
+        }
+    }
+
+    void release() {
+        if (this.iAmFree == false){
+            this.iAmFree = true;
+        }
+    }
 }
